@@ -1,4 +1,4 @@
-; Chapter 3, Exercise 1: Expression Calculation
+ ; Chapter 3, Exercise 1: Expression Calculation
 
 Comment !
 Description: Using the AddTwoo program from Section 3.2 as a
@@ -13,6 +13,14 @@ EBX, ECX, and EDX registers.
 ExitProcess proto,dwExitCode:dword
 .code
 main PROC
+	mov eax, 6	; move 6 to eax register
+	mov ebx, 6	; move 6 to ebx register
+	mov ecx, 3	; move 3 to ecx register
+	mov edx, 2	; move 2 to edx register
+
+	add eax, ebx	; add ebx to eax
+	add ecx, edx	; add edx to ecx
+	sub eax, ecx	; subtract ecx from eax
 
 	
 
